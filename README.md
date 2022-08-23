@@ -27,3 +27,8 @@ const num = [2, 5, 6, 0 , , , ];
 const saludo = 'HOLA';
 const saludo = ["H", "O","L","A"];
 ```
+
+## == Hash Table ==
+
+- Es una estructura de datos asociativa que relaciona una llave con un valor utilizando la funcion hash, dicha funcion se emplea para calcular el indice en el que van los elementos que estaran en la tabla.
+- Hash: “Una función criptográfica hash- usualmente conocida como “hash”- es un algoritmo matemático que transforma cualquier bloque arbitrario de datos en una nueva serie de caracteres con una longitud fija. Independientemente de la longitud de los datos de entrada, el valor hash de salida tendrá siempre la misma longitud.”
