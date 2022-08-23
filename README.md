@@ -18,3 +18,12 @@ const num = [2,5,6,0];
 ```
 const num = [2, 5, 6, 0 , , , ];
 ```
+
+## == Strings ==
+
+- Los string no son una estructura de datos, pero se guardan en memoria como tal:
+
+```
+const saludo = 'HOLA';
+const saludo = ["H", "O","L","A"];
+```
