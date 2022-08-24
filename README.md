@@ -32,3 +32,13 @@ const saludo = ["H", "O","L","A"];
 
 - Es una estructura de datos asociativa que relaciona una llave con un valor utilizando la funcion hash, dicha funcion se emplea para calcular el indice en el que van los elementos que estaran en la tabla.
 - Hash: “Una función criptográfica hash- usualmente conocida como “hash”- es un algoritmo matemático que transforma cualquier bloque arbitrario de datos en una nueva serie de caracteres con una longitud fija. Independientemente de la longitud de los datos de entrada, el valor hash de salida tendrá siempre la misma longitud.”
+
+## == Linked List ==
+
+- Éstas son simplemente un conjunto de nodos ordenados que contienen los valores que necesitemos (numbers, strings, boolean, etc). Cada uno tiene un valor y una referencia a un siguiente nodo. Singly Linked List
+  En el caso de la Singly Linked List cada Nodo guarda:
+
+1. Valor del nodo (Dato que guarda el nodo ya sea un string, number, boolean, etc).
+2. Referencia al nodo siguiente.
+
+- Pensemos en ellas como esos edificios con escaleras donde cada piso sería un Nodo. Si quisiera ir del piso 1 al piso 5, estoy obligado a pasar por los pisos 2, 3 y 4. Además siempre debo entrar por el primer piso.
