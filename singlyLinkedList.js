@@ -34,8 +34,26 @@ class MySyngleLinkedList {
         this.tail = this.head;
         this.length = 1;
     }
+    append(value) {
+        const node = new Node(value);
+        this.tail.next = node;
+        this.tail = node;
+        this.length++;
+        return this;
+
+    }
+    prepend(value) {
+        const node = new Node(value);
+        node.next = this.head;
+        this.head = node;
+        this.length++;
+        return this;
+    }
 }
 
 let LinkedList = new MySyngleLinkedList(1);
 
 console.log(LinkedList);
+console.log(LinkedList.append(23));
+console.log(LinkedList);
+console.log(LinkedList.prepend(12));

@@ -42,3 +42,7 @@ const saludo = ["H", "O","L","A"];
 2. Referencia al nodo siguiente.
 
 - Pensemos en ellas como esos edificios con escaleras donde cada piso sería un Nodo. Si quisiera ir del piso 1 al piso 5, estoy obligado a pasar por los pisos 2, 3 y 4. Además siempre debo entrar por el primer piso.
+
+## == Articles == 
+- https://medium.com/@bohndez.dev/estructuras-de-datos-linked-list-en-javascript-e84f3c50a4c4
+- https://levelup.gitconnected.com/array-vs-linked-list-data-structure-c5c0ff405f16
