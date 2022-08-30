@@ -43,6 +43,11 @@ const saludo = ["H", "O","L","A"];
 
 - Pensemos en ellas como esos edificios con escaleras donde cada piso sería un Nodo. Si quisiera ir del piso 1 al piso 5, estoy obligado a pasar por los pisos 2, 3 y 4. Además siempre debo entrar por el primer piso.
 
-## == Articles == 
+### == Doubly Linked List ==
+
+- Con este tipo de Linked list tiene la ventaja de tener dos direcciones, es decir, que se pueden recorrer del head al tail y del tail al head, no hace falta hacer un loop para volverla a recorrer.
+
+## == Articles ==
+
 - https://medium.com/@bohndez.dev/estructuras-de-datos-linked-list-en-javascript-e84f3c50a4c4
 - https://levelup.gitconnected.com/array-vs-linked-list-data-structure-c5c0ff405f16
