@@ -47,6 +47,11 @@ const saludo = ["H", "O","L","A"];
 
 - Con este tipo de Linked list tiene la ventaja de tener dos direcciones, es decir, que se pueden recorrer del head al tail y del tail al head, no hace falta hacer un loop para volverla a recorrer.
 
+## == Stacks ==
+
+- Los estacks son basicamente una pila de datos, tienen la logica de LIFO (Last In , First Out).
+  Se puede enteneder como una pila de ropa.
+
 ## == Articles ==
 
 - https://medium.com/@bohndez.dev/estructuras-de-datos-linked-list-en-javascript-e84f3c50a4c4
