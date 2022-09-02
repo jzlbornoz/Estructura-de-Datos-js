@@ -52,6 +52,9 @@ const saludo = ["H", "O","L","A"];
 - Los estacks son basicamente una pila de datos, tienen la logica de LIFO (Last In , First Out).
   Se puede enteneder como una pila de ropa.
 
+## ==Queues
+- Los queues o colas son una estructura de datos similar a un stack pero con la particularidad de que cuenta con una secuencia.
+
 ## == Articles ==
 
 - https://medium.com/@bohndez.dev/estructuras-de-datos-linked-list-en-javascript-e84f3c50a4c4
