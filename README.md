@@ -67,6 +67,21 @@ const saludo = ["H", "O","L","A"];
 * Un nodo solo puede tener dos descendientes, los descendientes que son mayores al nodo padre se colocaran a la derecha y los que son menores a la izquierda.
 * Para buscar en un Binary Search Tree simplemente tienes que preguntarte: ¿Este elemento es mayor o menor que el que estoy buscando? Ohh es mayor, entonces me voy para la izquierda, y así sucesivamente hasta que encuentres el elemento que estabas buscando.
 
+## == Graphs ==
+
+- Los grafos son nodos interconectados, cuentan con dos elementos importandos, los nodos (vertices) y los edges (borde) que son los conectores o pointer de los nodos o vertices.
+
+### Grafos dirigidos y no dirigidos:
+
+- Los grafos dirigidos cuentan con nodos interconectados pero con una sola direccion, mientras que los No Dirigidos cuentan con ambas direcciones.
+
+### Grafos Ponderados y no Ponderados:
+
+- Los grafos ponderados cuentan con vertices con un peso o valor mientras que los no Ponderados no cuentan con algun valor. Los grafos ponderados son utilizados en los mapas o en el calculo de rutas.
+
+### Grafos Ciclicos y Aciclicos 
+- Los grafos ciclicos cuentan con la particularidad que no importa el nodo en que nos ubiquemos, podremos recorrer todos los nodos en forma de ciclo, mientras que en los aciclicos no.
+
 ## == Articles ==
 
 - https://medium.com/@bohndez.dev/estructuras-de-datos-linked-list-en-javascript-e84f3c50a4c4
