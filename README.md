@@ -52,8 +52,20 @@ const saludo = ["H", "O","L","A"];
 - Los estacks son basicamente una pila de datos, tienen la logica de LIFO (Last In , First Out).
   Se puede enteneder como una pila de ropa.
 
-## ==Queues
+## == Queues ==
+
 - Los queues o colas son una estructura de datos similar a un stack pero con la particularidad de que cuenta con una secuencia.
+
+## == Trees ==
+
+- Los trees son una estructura de datos que tienen una estructura con nodos, que estos representan los hijos de un nodo padre.
+
+### Binary trees
+
+- Consta de un nodo root (padre). A partir de dicho nodo descienden de la siguiente manera:
+
+* Un nodo solo puede tener dos descendientes, los descendientes que son mayores al nodo padre se colocaran a la derecha y los que son menores a la izquierda.
+* Para buscar en un Binary Search Tree simplemente tienes que preguntarte: ¿Este elemento es mayor o menor que el que estoy buscando? Ohh es mayor, entonces me voy para la izquierda, y así sucesivamente hasta que encuentres el elemento que estabas buscando.
 
 ## == Articles ==
 
