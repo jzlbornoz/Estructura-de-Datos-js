@@ -19,6 +19,35 @@ const num = [2,5,6,0];
 const num = [2, 5, 6, 0 , , , ];
 ```
 
+### Manipulacion de Arrays
+
+- Para dominar este tema se necesita tener claro los siguientes conceptos:
+
+#### Mutabilidad VS Inmutabilidad
+
+- Mutable: es algo que se puede cambiar o agregar.
+- Inmutable: es algo que no puede cambiar ni agregar.
+
+#### Metodo .map()
+
+- .map() es INMUTABLE por lo tanto no modifica el array original, sino que crea uno nuevo con la “transformación” aplicada.
+- Además, mantienes el mismo length que el array original, te devuelve en el nuevo array la misma cantidad que el array que le aplicaste el método.
+
+```
+const array = [1, 3, 45, 32, 56];
+
+const newArray = [];
+for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    newArray[i] = `Este es el # ${element}`;
+}
+console.log(newArray);
+
+
+// Con Map
+const NewArray = array.map(item => `Este es el # ${item}`);
+```
+
 ## == Strings ==
 
 - Los string no son una estructura de datos, pero se guardan en memoria como tal:
