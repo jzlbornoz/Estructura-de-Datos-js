@@ -62,6 +62,7 @@ const rta2 = items1.map(item => {
     return {
         ...item,
         tax: 0.07,
+        price: `${item.price}$`
     }
 })
 console.log('rta2 Sin Modificacion en el array Original', rta2);
