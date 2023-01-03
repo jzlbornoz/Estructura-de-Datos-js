@@ -483,6 +483,57 @@ console.log('rta3: ' , rta3);
 
 ```
 
+#### Metodo .find() y .findIndex()
+
+- Es un metodo similar a filter, con la diferencia de que find retorna un objeto, el que compla con la condicion dada, y findIndex retorna la posicion de dicho objeto.
+
+```
+const numbers = [12, 4, 6, 77, 23, 12, 53];
+let rta = undefined;
+
+for (let i = 0; i < numbers.length; i++) {
+    const element = numbers[i];
+    if (element === 4) {
+        rta = element;
+        break;
+    }
+}
+console.log('find con loop for: ', rta);
+
+// .find()
+const rta1 = numbers.find(number => number === 4);
+console.log('rta: ', rta1);
+
+const products = [
+    {
+        name: "Pizza",
+        price: 12,
+        id: '🍕'
+    },
+    {
+        name: "Burger",
+        price: 23,
+        id: '🍔'
+    },
+    {
+        name: "Hot dog",
+        price: 34,
+        id: '🌭'
+    },
+    {
+        name: "Hot cakes",
+        price: 355,
+        id: '🥞'
+    },
+];
+
+const rta2 = products.find(element => element.id === '🥞');
+console.log('rta2: ', rta2);
+
+const rta3 = products.findIndex(element => element.id === '🥞');
+console.log('rta3: Index:', rta3);
+```
+
 ## == Strings ==
 
 - Los string no son una estructura de datos, pero se guardan en memoria como tal:
