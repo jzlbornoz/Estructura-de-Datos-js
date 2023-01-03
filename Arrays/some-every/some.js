@@ -91,4 +91,4 @@ const isOverlap = (newDate) => {
         return "Espacio libre, cita agendada con exito"
     }
 }
-console.log('Agenda:', isOverlap(newAppointment));
+console.log('Agenda:' , isOverlap(newAppointment));

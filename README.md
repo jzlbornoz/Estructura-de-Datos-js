@@ -218,7 +218,7 @@ console.log('.reduce(): ' , rta);
 
 ```
 
-#### reduce reloaded
+##### reduce reloaded
 
 ```
 // histograma
@@ -332,7 +332,7 @@ const rta4 = data.reduce((obj, item) => {
 console.log(rta4);
 ```
 
-#### .Some()
+#### Metodo .Some()
 
 - Este emtodo permite reducir un array a true/false dependiendo si algun elemento cumple una determinada condicion.
 
@@ -431,6 +431,55 @@ const isOverlap = (newDate) => {
     }
 }
 console.log('Agenda:', isOverlap(newAppointment));
+
+```
+
+#### Metodo .every()
+
+- Es similar a .some(), solo que valida que todos los items del array cumplan la condicion.
+
+```
+const numbers = [1, 2, 3, 4, 6, 57, 788, 3,];
+
+let rta = true;
+
+for (let i = 0; i < numbers.length; i++) {
+    const element = numbers[i];
+    if (element < 100) {
+        rta = !rta;
+        break;
+    }
+
+}
+
+console.log('every loop for: ', rta);
+
+// .every
+
+const rta2 = numbers.every(item => item < 100);
+console.log('.every(): ' , rta2);
+
+const team = [
+    {
+      name: "Nicolas",
+      age: 12,
+    },
+    {
+      name: "Andrea",
+      age: 8,
+    },
+    {
+      name: "Zulema",
+      age: 2,
+    },
+    {
+      name: "Santiago",
+      age: 13,
+    },
+  ];
+
+const rta3 = team.every(person => person.age < 15);
+console.log('rta3: ' , rta3);
 
 ```
 
