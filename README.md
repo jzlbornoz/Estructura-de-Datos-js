@@ -558,7 +558,7 @@ console.log('.include()' , rta);
 
 ```
 
-### Metodo .join() y .split()
+#### Metodo .join() y .split()
 
 - Este metodo permite unir un array por un string en especifico, en cambio split transforma un string a un array.
 
@@ -581,6 +581,31 @@ console.log('.join(): ', rta1);
 const title = "Hola mundo que hacen xd";
 const res = title.split(' ').join('-').toLocaleLowerCase();
 console.log('.split(): ', res);
+```
+
+#### Metodo .concat()
+
+- Como su nombre lo indica, permite concatenar dos arrays inmutablemente.
+
+```
+const array1 = [1, 2, 3, 4,];
+const array2 = [5, 6, 7, 8,];
+
+const newArray = [...array1];
+
+for (let i = 0; i < array2.length; i++) {
+    const element = array2[i];
+    newArray.push(element);
+}
+
+console.log('array 1: ', array1);
+console.log('array 2: ', array2);
+console.log('new Array: ', newArray);
+
+// .concat()
+
+const rta = array1.concat(array2);
+console.log('.concat(): ', rta);
 ```
 
 ## == Strings ==
