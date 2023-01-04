@@ -534,6 +534,30 @@ const rta3 = products.findIndex(element => element.id === '🥞');
 console.log('rta3: Index:', rta3);
 ```
 
+#### Metodo .includes()
+
+- Es un metodo que nos retorna true/false si el array incluye algun elemento indicado.
+
+```
+const pets = ['dog', 'cat', 'tiger', 'lion'];
+
+let isInclude = false;
+
+for (let i = 0; i < pets.length; i++) {
+    const element = pets[i];
+    if (element === 'cat') {
+        isInclude = true;
+        break;
+    }
+}
+console.log('include con loop for: ', isInclude);
+
+// .include()
+const rta = pets.includes('cat');
+console.log('.include()' , rta);
+
+```
+
 ## == Strings ==
 
 - Los string no son una estructura de datos, pero se guardan en memoria como tal:
