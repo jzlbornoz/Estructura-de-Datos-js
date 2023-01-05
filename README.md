@@ -608,6 +608,106 @@ const rta = array1.concat(array2);
 console.log('.concat(): ', rta);
 ```
 
+#### Metodo .flat()
+
+- Este metodo permite 'aplanar' un array de arrays, por ejemplo una matriz.
+
+```
+const matriz = [
+    [1, 3, 5],
+    [5, 6, 2],
+    [9, 8, 4],
+]
+
+const newArray = [];
+
+for (let i = 0; i < matriz.length; i++) {
+    const element = matriz[i];
+    for (let j = 0; j < element.length; j++) {
+        const number = element[j];
+        newArray.push(number);
+    }
+}
+
+const rta = matriz.flat();
+console.log('flat con loop for: ', newArray);
+console.log('.flat(): ', rta);
+
+// array con varios niveles usando recursividad.
+
+const matriz2 = [
+    [1, 3, [12, 26, [67]]],
+    [5, 6, 2],
+    [9, 8, [23, 34, 6]],
+]
+
+const flatRecursivo = (matriz) => {
+    let newArray = [];
+    if (typeof matriz != 'object') return [matriz];
+    matriz.map(item => {
+        newArray = newArray.concat(flatRecursivo(item));
+    });
+    return newArray;
+}
+
+const res = matriz2.flat(4);
+console.log('Recursividad: ', flatRecursivo(matriz2));
+console.log('.flat(4): ', res);
+```
+
+#### Metodo .flatmap()
+
+- Es la union de el metodo map y flat.
+
+```
+const users = [
+    { userId: 1, username: "Tom", attributes: ["Nice", "Cute"] },
+    { userId: 2, username: "Mike", attributes: ["Lovely"] },
+    { userId: 3, username: "Nico", attributes: ["Nice", "Cool"] },
+]
+
+console.log('flat-map: ',
+    users.map(user => user.attributes).flat()
+);
+console.log('.flatmap(): ',
+    users.flatMap(user => user.attributes)
+)
+
+// Manejo de respuesta a una api
+
+const calendars = {
+    primaryCalendar: [
+        {
+            startDate: new Date(2021, 1, 1, 15),
+            endDate: new Date(2021, 1, 1, 15, 30),
+            title: "Cita 1",
+        },
+        {
+            startDate: new Date(2021, 1, 1, 17),
+            endDate: new Date(2021, 1, 1, 18),
+            title: "Cita 2",
+        },
+    ],
+    secondaryCalendar: [
+        {
+            startDate: new Date(2021, 1, 1, 12),
+            endDate: new Date(2021, 1, 1, 12, 30),
+            title: "Cita 2",
+        },
+        {
+            startDate: new Date(2021, 1, 1, 9),
+            endDate: new Date(2021, 1, 1, 10),
+            title: "Cita 4",
+        },
+    ],
+};
+
+const res = Object.values(calendars); // se convierte en array.
+const resFlatted = res.flatMap(item => item.map(date => date.startDate));
+console.log(res);
+console.log(resFlatted);
+```
+
 ## == Strings ==
 
 - Los string no son una estructura de datos, pero se guardan en memoria como tal:
